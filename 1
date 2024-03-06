@@ -1,0 +1,26 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	  HashMap<Integer,Integer> map = new HashMap<>();
+      map.put(1,100);
+      map.put(2,70);
+      map.put(3,85);
+
+    for (int regno:map.keySet()){
+        int marks=map.get(regno);
+        if(marks>=90){
+            System.out.println("Gold Awards");
+        }else if(marks>=80&&marks<90){
+          System.out.println("Silver Awards!");
+        }
+        else if(marks>=70&&marks<80){
+            System.out.println("Bronze Awards!");
+        }
+        
+      }
+	 
+	}
+}
